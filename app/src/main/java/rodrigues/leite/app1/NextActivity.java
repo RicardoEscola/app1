@@ -12,9 +12,9 @@ public class NextActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_next);
-        Intent intent = getIntent();
-        String texto = intent.getStringExtra("texto");
-        TextView tvExibir = findViewById(R.id.tvExibir);
-        tvExibir.setText(texto);
+        Intent intent = getIntent(); //Crinado uma variavel e pegando oq veio na intent
+        String texto = intent.getStringExtra("texto"); //armazenando o texto da outra tela
+        TextView tvExibir = findViewById(R.id.tvExibir); //pegando a textview
+        tvExibir.setText(texto); //escrevendo o texto na textview
     }
 }
